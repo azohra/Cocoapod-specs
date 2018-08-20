@@ -11,17 +11,16 @@ Pod::Spec.new do |s|
   s.name          = "UITM"
   s.version       = "0.1.0"
   s.summary       = "Test management tool to upload test results to remote test management system."
-  s.homepage      = "http://EXAMPLE/UITM"
+  s.homepage      = "https://github.com/azohra/UITM"
   s.license       = "MIT"
   s.author        = { "Lu Cui" => "lu.cui@loblaw.ca" }
   s.platform      = :ios, "10.0"
   s.source        = { :git => "https://github.com/azohra/UITM.git", :tag => "#{s.version}" }
-  s.source_files  = "Sources/*.swift", "lib/*"
+  s.source_files  = "Sources/*.swift"
   s.exclude_files = "Classes/Exclude"
   s.frameworks  = "XCTest"
   s.dependency "CloudStorage"
   s.dependency "TestManagement"
-  s.dependency "Sourcery"
   s.swift_version = '4.0'
 
 end
